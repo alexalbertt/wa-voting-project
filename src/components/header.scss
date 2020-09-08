@@ -35,7 +35,29 @@ $mainDarkBlue: #1F4A6C;
     color: $mainDarkBlue;
 }
 
+.nav-link:last-child {
+    // box-shadow: 0rem  0rem 0 0 $mainDarkBlue;
+    
+    background-color: $mainDarkBlue;
+    width: 3.7rem;
+    height: -1rem;
+    border-radius: .5rem;
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        background-color: $mainDarkBlue;
+        width: 4.7rem;
+        height: -1rem;
+        border-radius: .5rem;
+    }
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+}
+
 .header-link-donate {
     color: white;
-    background-color: $mainDarkBlue;
+    // background-color: $mainDarkBlue;
+    // width: 2rem;
+    // height: 1rem;
+    // box-shadow: -1rem -1rem 0 0 $mainDarkBlue;
 }
