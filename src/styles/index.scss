@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Fauna+One&display=swap');
+@import url('https://unpkg.com/ionicons@5.1.2/dist/ionicons.js');
+$mainRed: #E63946;
+$mainDarkBlue: #1F4A6C;
+$mainLightBlue: #55A0D7;
+$mainLightGrey: #848282;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Fauna One', serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h1 {
+    /* Extra small devices (phones, less than 768px) */
+    font-size: 2.8rem;
+    
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+  
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      font-size: 3.2rem;
+    }
+  
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      font-size: 3.5rem;
+    }
+}
+
+.hero-section {
+    position: relative;
+    height: 70vh;
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        height: 70vh;
+        min-height: 500px;
+    }
+}
+
+.hero-content {
+    position: absolute;
+    padding-top: 3rem;
+    top: 0;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        height: 85%;
+    }
+}
+
+.h1-brk {
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      display: none;
+    }
+}
+
+.center {
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      text-align: center;
+    }
+}
+
+.underlined {
+  color: $mainLightBlue;
+  box-sizing: border-box;
+  box-shadow: inset 0px -6px $mainRed;
+}
+
+.star-container {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+    }
+}
+
+.star-icon {
+    size: 2rem;
+    color: $mainDarkBlue;
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        size: 2rem;
+    }
+}
+
+.scroll-icon {
+    display: none;
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        display: inline;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        bottom: 3rem;    
+    }
+}
+
+.fa-angle-double-down {
+    color: $mainDarkBlue;
+    size: 3em;
+    // height: 50rem;
+}
+
+.search-text {
+    font-size: 1.5rem;
+    color: $mainLightGrey;
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        font-size: 1.5rem;
+    }
+}
+
+/*ABOUT SECTION*/
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $mainLightBlue;
+    height: 500px;
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        flex-direction: row;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+.about-content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    // height: 50%;
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        justify-content: flex-start;
+        // height: 100%;
+        width: 30%;
+    }
+}
+
+.about-content-header-text {
+    color: white;
+    font-size: 2rem;
+    // text-align: center;
+    text-align: start;
+
+    margin-top: 2rem;
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        width: 90%;
+        margin-top: 0;
+        // text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
+.about-content-description {
+    text-align: center;
+    color: white;
+    margin-top: 1rem;;
+    font-size: .8rem;    
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        text-align: start;
+        font-size: 1rem;
+        width: 90%;
+
+    }
+}
+
+.about-learn-more-btn {
+    background-color: $mainRed;
+    font-size: .8rem;
+    padding: .5rem 2rem .5rem 2rem;
+    color: white !important;
+    border-radius: .5rem;
+    box-shadow: 0 0 20px -15px;
+    text-decoration: none !important;
+    margin-top: 1rem;
+
+    &:hover {
+        background-color: darkred;
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        margin-top: 2rem;
+        font-size: .8rem;
+        padding: 1rem 3rem 1rem 3rem;
+    }
+}
+
+.about-video {
+    border-radius: 1rem;
+    margin-top: 2rem;
+    width: 300px;
+    height: 200px;
+    border: 0;
+    width: 90%;
+    height: 50%;
+    max-width: 700px;
+    @media (min-width: 992px) {
+      margin-top: 0;
+      width: 60%;
+      height: 80%;
+      border: 0;
+    }
+}
+
+/*LOCAL SECTION*/
+
+.local-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.local-content-header-text {
+    font-size: 2rem;
+    text-align: center;
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        font-size: 2.8rem;
+    }
+}
+
+.local-content-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+}
+
+.local-content-card {
+    padding: 1rem 0 1rem 0;
+    // border-bottom: $mainDarkBlue dashed 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        padding: 3rem 0 3rem 0;
+    }
+}
+
+.local-content-card-text {
+    width: 70%;
+}
+
+.local-content-img {
+    height: 7rem;
+    width: 7rem;
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+.local-content-card-header {
+    color: $mainLightBlue;
+    font-size: 1rem;
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        font-size: 1.5rem;
+    }
+
+}
+
+.local-content-card-paragraph {
+    font-size: .5rem;
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        font-size: .85rem;
+    }
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}

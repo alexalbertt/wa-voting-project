@@ -1,0 +1,63 @@
+$mainRed: #E63946;
+$mainDarkBlue: #1F4A6C;
+$mainLightBlue: #55A0D7;
+$mainLightGrey: #848282;
+
+
+.donate-content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.donate-header {
+
+    /* Extra small devices (phones, less than 768px) */
+    font-size: 2.8rem;
+    
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+  
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      font-size: 3.2rem;
+    }
+  
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      font-size: 3.5rem;
+    }
+}
+
+.underlined {
+    color: $mainLightBlue;
+    box-sizing: border-box;
+    box-shadow: inset 0px -6px $mainRed;
+  }
+
+.donate-text {
+    width: 90%;
+    max-width: 900px;
+    margin-top: 4rem;
+}
+
+.signatures {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.signature-img {
+    width: 20rem;
+}
+
+.signature-name {
+    margin-top: 1rem;
+}
