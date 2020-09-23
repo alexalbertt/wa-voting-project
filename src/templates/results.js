@@ -53,4 +53,4 @@ const results = (props) => {
     );
 }
 
-export default Results;
+export default results;

@@ -74,4 +74,4 @@ const candidate = (props) => {
     );
 }
 
-export default Candidate;
+export default candidate;
