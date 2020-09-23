@@ -1,0 +1,50 @@
+$mainRed: #E63946;
+$mainDarkBlue: #1F4A6C;
+$mainLightBlue: #55A0D7;
+$mainLightGrey: #848282;
+
+
+.results-content {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.results-header {
+
+    /* Extra small devices (phones, less than 768px) */
+    font-size: 2.8rem;
+    
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+  
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      font-size: 3.2rem;
+    }
+  
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      font-size: 3.5rem;
+    }
+}
+
+.results-header {
+    margin-bottom: 3rem;
+}
+
+.accordion {
+    width: 100%;
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        width: 800px;
+    }
+}

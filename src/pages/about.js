@@ -12,13 +12,13 @@ export default function About() {
             <Layout>
                 <section class="about-hero">
                     <h2 class="about-header">About <span class="underlined">us</span></h2> 
-                    <p class="about-text">Washington Voting Project began in July 2020 as a personal educational project. As college students returning to the area, we noticed yard signs popping up around Central Washington. There was one problem: we didn’t know a thing about these candidates. We didn’t know what they looked like. Didn’t know what their voices sounded like. And that was a problem.<br/><br/>
+                    <p class="about-text">Washington Voting Project began in July 2020 as a personal educational project. As college students returning to the area, we noticed yard signs popping up around Central Washington. There was one problem: <span style={{color: "#55A0D7"}}>we didn’t know a thing about these candidates. </span> We didn’t know what they looked like. Didn’t know what their voices sounded like. And that was a problem.<br/><br/>
 
 
         Washington Voting Project is the answer. With a vision to provide people in Central Washington with greater accessibility to local elections, we intend to interview each general election candidate for races in Chelan, Douglas, Okanogan, Grant, and Kittitas Counties. We firmly believe that one of the best ways to learn about a candidate and get beyond the yard sign is simply to listen to them speak.<br/><br/>
 
 
-        If you have any questions about our organization or would like to contact Washington Voting Project, email team@wavoting.org.</p>
+        If you have any questions about our organization or would like to contact Washington Voting Project, email <a href = "mailto:team@wavoting.org?subject = Contact&body = Message">team@wavoting.org</a>.</p>
         <IconContext.Provider value={{className:"star-icon", size: '40px'}}>
 						<div class="col-md-4 col-sm-10 star-container ">
 							<MdStar />

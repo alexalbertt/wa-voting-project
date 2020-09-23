@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 600px;
+    min-height: 600px;
 }
 
 .about-team-content {
@@ -97,17 +97,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .name-card {
     display: flex;
-    width: 100%;
-    margin-bottom: 2rem;
+    flex-direction: column;
     align-items: center;
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 }
 
 .profile-pic {
-    height: 6rem;
-
+    height: 8rem;
+    width: 8rem;
     /* Medium devices (desktops, 992px and up) */
     @media (min-width: 992px) {
-        height: 8rem
+        height: 8rem;
+        width: 8rem;
     }
 }
 
