@@ -30,7 +30,7 @@ export const query = graphql`
         }
     }
 `
-const Candidate = (props) => {
+const candidate = (props) => {
     console.log("Youtube");
     console.log(props.data.contentfulCandidate.youtubeLink);
     return(
