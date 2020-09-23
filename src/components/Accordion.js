@@ -17,8 +17,6 @@ export default function Accordion(props) {
         setHeightState(setActive === "active" ? "0px" : `${content.current.scrollHeight}px`);
         setVisibleState(setActive === "active" ? "none" : "inline");
     }
-    console.log(props.content);
-
     return (
         <div className="accordion-section">
             <button className={`accordion-button ${setActive}`} onClick={toggleActive}>

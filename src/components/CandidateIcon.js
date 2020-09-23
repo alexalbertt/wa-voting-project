@@ -9,10 +9,7 @@ const CandidateIcon = (props) => {
     const backgroundColor = `${props.candidate.party}color`;
 
     function renderImage(element) {
-        console.log(element);
-        console.log(props.candidate.name);
         if (element.node.name === props.candidate.name) {
-            console.log("image found");
             return <Img
                 fluid={element.node.profilePicture.fluid} 
                 key={element.node.profilePicture.fluid.src}

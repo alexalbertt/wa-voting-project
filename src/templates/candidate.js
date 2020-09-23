@@ -31,8 +31,6 @@ export const query = graphql`
     }
 `
 const candidate = (props) => {
-    console.log("Youtube");
-    console.log(props.data.contentfulCandidate.youtubeLink);
     return(
         <Layout>
             <div class="candidate-content">
