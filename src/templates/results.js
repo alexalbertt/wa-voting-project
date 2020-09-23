@@ -37,8 +37,6 @@ export const query = graphql`
 `
 
 const results = (props) => {
-    console.log(props.data.contentfulCountyResults.candidateList.positions);
-
     return (
         <Layout>
             <section className="results-content">

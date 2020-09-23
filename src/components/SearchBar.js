@@ -38,7 +38,6 @@ const SearchBar = () => {
     // by setting the second parameter as "false"
     setValue(description, false);
     clearSuggestions();
-    console.log("Address: ", description);
     // Get latitude and longitude via utility functions
     // getGeocode({ address: description })
     //   .then((results) => getLatLng(results[0]))
@@ -52,7 +51,6 @@ const SearchBar = () => {
         // By default we use the "long_name" value from API response, you can tell the utility to use "short_name"
         // by setting the second parameter to "true"
         .then((results) => {
-          console.log("Geocoding results: ", results);
             let county = null;
           
           results[0].address_components.forEach(({ long_name, short_name, types }) => {
