@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 export default function HTML(props) {
-  const API_KEY = process.env.GOOGLE_API_KEY;
+  const API_KEY = process.env.GATSBY_GOOGLE_API_KEY;
   return (
     <html {...props.htmlAttributes}>
       <head>
