@@ -1,0 +1,86 @@
+$mainRed: #E63946;
+$mainDarkBlue: #1F4A6C;
+$mainLightBlue: #55A0D7;
+$mainLightGrey: #eeeeee;
+$mainDarkGrey: #b8b8b8;
+
+
+.accordion-section {
+    width: 100vw;
+}
+
+.accordion-button {
+    text-decoration: none !important;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid $mainDarkGrey;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    &:focus{
+        outline: 0;
+        outline:none;
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        height: 80px;
+        width: 800px;
+      }
+}
+
+
+.centerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.accordion-icon {
+    color: $mainDarkGrey;
+    size: 3rem !important;
+    border: none !important;
+}
+
+.accordion-title {
+    color: $mainDarkGrey;
+    font-size: 1.3rem;
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    border: none !important;
+    margin-right: 1rem;
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        font-size: 1.9rem;
+        margin-right: 2rem;
+    }
+}
+
+.accordion-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $mainLightGrey;
+    padding: 1rem 0 1rem 0rem;
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        padding: 3rem 0 3rem 2rem;
+        width: 800px;
+        flex-direction: row;
+
+      }
+}
+
+.active {
+    border-bottom: 1px solid $mainLightBlue;
+    color: $mainLightBlue;
+    outline:none;
+}

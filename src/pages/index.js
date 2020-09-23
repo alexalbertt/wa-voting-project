@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row } from "react-bootstrap";
 import "../styles/index.scss";
 import {MdStar} from 'react-icons/md';
-import {FaAngleDoubleDown} from 'react-icons/fa';
 import { IconContext } from "react-icons";
 import SearchBar from "../components/SearchBar";
 import { Link } from "gatsby";
@@ -20,25 +19,6 @@ export default function Home() {
 		<Layout>
 			<Head title="Home"/>
 			<section class="hero-section" >
-				{/* <Container fluid class="d-flex flex-column justify-content-around h-75">
-					<Row class="d-flex flex-row align-items-center">
-						<h1 class="col-md-12 col-sm-12 center">REAL <span class="underlined">INTERVIEWS</span>. <br class="h1-brk"/>REAL <span class="underlined">CANIDATES</span>.</h1>
-					</Row>
-					<Row class="d-flex flex-row justify-content-center align-items-center">
-						<div class="col-md-4 col-sm-8 star-container">
-							<FontAwesomeIcon icon={faStar} size="3x" />
-							<FontAwesomeIcon icon={faStar} size="3x" />
-							<FontAwesomeIcon icon={faStar} size="3x" />
-						</div>
-					</Row>
-					<Row class="d-flex flex-row justify-content-center align-items-center h-25" style={{backgroundColor:"blue"}}>
-						<p>Learn who's on your ballot</p>
-						<SearchBar/>
-					</Row>
-				</Container>
-				<div class="scroll-icon">
-					<FontAwesomeIcon icon={faAngleDoubleDown} size='3x' />
-				</div> */}
 			<div class="hero-content">
 				<div class="d-flex flex-row align-items-center">
 					<h1 class="col-md-12 col-sm-12 center">Real <span class="underlined">interviews</span>. <br class="h1-brk"/>Real <span class="underlined">candidates</span>.</h1>
@@ -61,13 +41,6 @@ export default function Home() {
 					<SearchBar/>
 				</div>
 			</div>
-			{/* <div class="scroll-icon">
-			<IconContext.Provider value={{className:"fa-angle-double-down", size: '50px'}}>
-				<div>
-				<FaAngleDoubleDown/>
-				</div>
-			</IconContext.Provider>
-			</div> */}
 			</section>
 			<section class="about-content">
 				<div class="about-content-text">
@@ -75,10 +48,10 @@ export default function Home() {
 					<p class="about-content-description">Washington Voting Project was founded in July 2020 with a vision to provde people in Central Washington with greater accessibility to local elections.</p>
 					<Link to="/about" class="about-learn-more-btn">LEARN MORE</Link>
 				</div>
-				<iframe class="about-video" src="https://www.youtube.com/embed/wTqsV3q7rRU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe class="about-video" src="https://www.youtube.com/embed/P1MK_d20sO0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</section>
 			<section class="local-content">
-				<h2 class="local-content-header-text">Why does local matter?</h2>
+				<h2 class="local-content-header-text">Why does <span class="underlined">local</span> matter?</h2>
 				<div class="local-content-list">
 					<div class="local-content-card">
 						<img src={directIcon} alt="Direct-Icon" class="local-content-img"></img>

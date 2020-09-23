@@ -1,0 +1,69 @@
+$mainRed: #E63946;
+$mainDarkBlue: #1F4A6C;
+$mainLightBlue: #55A0D7;
+$mainLightGrey: #ffffff;
+
+.candidateIcon-link {
+    width: 150px;
+    height: 200px;
+    background-color: white;
+    border-radius: .5rem;
+    margin-top: 2rem;
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        margin-top: 0rem;
+
+      }
+}
+
+.candidateIcon-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // padding: 0 .25rem 0 .25rem;
+}
+
+.candidateIcon-img {
+    // width: 100px;
+    // height: 100px;
+    // overflow: hidden;
+    // // background-color: red;
+    // margin-top: 2rem;
+    // border-radius: 50%;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: .5rem;
+
+}
+
+.candidateIcon-name {
+    font-size: 1rem;
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    width: 80%;
+    // text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 12px;
+    // margin-top: 1rem;
+}
+
+.Dcolor {
+    background-color: rgba(85, 160, 215, .4);
+}
+
+.Rcolor {
+    background-color: rgba(230, 57, 70, .4);
+}
+
+.Ocolor {
+    background-color: #b7e4c7;
+}

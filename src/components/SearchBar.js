@@ -1,5 +1,6 @@
 import React from "react";
 import "./searchbar.scss";
+import { navigate, navigateTo } from "gatsby";
 
 import usePlacesAutocomplete, {
   getGeocode,
@@ -50,10 +51,25 @@ const SearchBar = () => {
     getGeocode({ address: description })
         // By default we use the "long_name" value from API response, you can tell the utility to use "short_name"
         // by setting the second parameter to "true"
-        .then((results) => getZipCode(results[0], false))
-        .then((zipCode) => {
-            console.log("ZIP Code: ", zipCode);
+        .then((results) => {
+          console.log("Geocoding results: ", results);
+            let county = null;
+          
+          results[0].address_components.forEach(({ long_name, short_name, types }) => {
+            if (types.includes("administrative_area_level_2"))
+              county = short_name.split(" ")[0];
+          });
+          navigateTo(`/results/county/${county.toLowerCase()}`);
         })
+        // .then((results) => getZipCode(results[0], false))
+        // .then((zipCode) => {
+        //     console.log("ZIP Code: ", zipCode);
+        //     fetch(`https://api.github.com/repos/gatsbyjs/gatsby`)
+        //     .then(response => response.json()) // parse JSON from request
+        //     .then(resultData => {
+        //       setStarsCount(resultData.stargazers_count)
+        //     })
+        // })
         .catch((error) => {
             console.log("Error: ", error);
         });
@@ -86,12 +102,6 @@ const SearchBar = () => {
       {status === "OK" && <ul className="search-results">{renderSuggestions()}</ul>}
     </div>
   );
-// export default function SearchBar() {
-//     return (
-//         <div>
-//             <input type="text" class="search-input" placeholder="Ex: 1234 Penn St Rd"/>
-//         </div>
-//     );
 } 
 
 export default SearchBar;
