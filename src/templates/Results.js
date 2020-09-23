@@ -36,7 +36,7 @@ export const query = graphql`
     }
 `
 
-const Results = (props) => {
+const results = (props) => {
     console.log(props.data.contentfulCountyResults.candidateList.positions);
 
     return (
