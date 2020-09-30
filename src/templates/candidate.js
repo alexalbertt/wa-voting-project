@@ -2,9 +2,10 @@ import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import {documentToReactComponents} from "@contentful/rich-text-react-renderer";
-import Img from "gatsby-image";
 import "../styles/candidate.scss";
 import noInterviewPic from "../../static/img/no-interview-pic.png";
+import Head from "../components/head";
+
 
 
 
@@ -35,6 +36,7 @@ export const query = graphql`
 const candidate = (props) => {
     return(
         <Layout>
+            <Head title={props.data.contentfulCandidate.name}/>
             <div class="candidate-content">
                 <h2 class="candidate-header underlined">{props.data.contentfulCandidate.name}</h2>
                 <p class="candidate-position">Candidate for {props.data.contentfulCandidate.position}</p>

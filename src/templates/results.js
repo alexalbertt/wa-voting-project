@@ -1,10 +1,9 @@
 import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
-import {documentToReactComponents} from "@contentful/rich-text-react-renderer";
-import Img from "gatsby-image";
 import Accordion from "../components/Accordion";
 import "../styles/results.scss";
+import Head from "../components/head";
 
 
 export const query = graphql`
@@ -39,6 +38,7 @@ export const query = graphql`
 const results = (props) => {
     return (
         <Layout>
+            <Head title={props.data.contentfulCountyResults.candidateList.county}/>
             <section className="results-content">
                 <h2 class="results-header">On the ballot in <span class="underlined">{props.data.contentfulCountyResults.candidateList.county}</span></h2>
                 <div className="accordion">

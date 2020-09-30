@@ -5,12 +5,15 @@ import {MdStar} from 'react-icons/md';
 import { IconContext } from "react-icons";
 import xavierSig from "../../static/img/xavier-signature.png";
 import alexSig from "../../static/img/alex-signature.png";
+import Head from "../components/head";
+
 
 
 
 export default function About() {
     return (
             <Layout>
+                <Head title="Donate"/>
                 <section class="donate-content">
                     <h2 class="donate-header underlined">Donate</h2>
                     <p class="donate-text">We’re constantly working to improve our services. However, as college students, our wallets are tight. In order to provide high-quality video and audio, maintain our website, and spread our message to as many people as possible, we depend on civic-minded people like you to support our services.<br/><br/>

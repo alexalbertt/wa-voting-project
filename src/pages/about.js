@@ -5,11 +5,14 @@ import {MdStar} from 'react-icons/md';
 import { IconContext } from "react-icons";
 import xavierprofilepic from "../../static/img/xavier-profile-pic.png";
 import alexprofilepic from "../../static/img/alex-profile-pic.png";
+import Head from "../components/head";
+
 
 
 export default function About() {
     return (
             <Layout>
+                <Head title="About"/>
                 <section class="about-hero">
                     <h2 class="about-header">About <span class="underlined">us</span></h2> 
                     <p class="about-text">Washington Voting Project began in July 2020 as a personal educational project. As college students returning to the area, we noticed yard signs popping up around Central Washington. There was one problem: <span style={{color: "#55A0D7"}}>we didn’t know a thing about these candidates. </span> We didn’t know what they looked like. Didn’t know what their voices sounded like. And that was a problem.<br/><br/>
