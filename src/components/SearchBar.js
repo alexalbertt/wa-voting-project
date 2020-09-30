@@ -94,7 +94,7 @@ const SearchBar = () => {
         value={value}
         onChange={handleInput}
         disabled={!ready}
-        placeholder="Ex: 1234 Penn St Rd"
+        placeholder="Enter an address, city, or ZIP code"
       />
       {/* We can use the "status" to decide whether we should display the dropdown or not */}
       {status === "OK" && <ul className="search-results">{renderSuggestions()}</ul>}
