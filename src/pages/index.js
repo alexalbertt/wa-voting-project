@@ -64,7 +64,7 @@ export default function Home() {
 						<img src={federalIcon} alt="Federal-Icon" class="local-content-img"></img>
 						<div class="local-content-card-text">
 							<p class="local-content-card-header">Local Leads When Federal Lacks</p>
-							<p class="local-content-card-paragraph">While most news about legislation is focused on the federal level, meaningful changes often occur on the local level. While federal lawmaking in the US often encounters roadblocks in the forms of gridlock, filibustering, and lobbying. Recently, local governments around the country have passed controversial legislation including reparations for slavery, police budget cuts, and gun control.</p>
+							<p class="local-content-card-paragraph">As most news about legislation is focused on the federal level, it's easy to overlook the meaningful changes that often occur on the local level while federal lawmaking in the US encounters roadblocks in the forms of gridlock, filibustering, and lobbying. Recently, local governments around the country have dealt with issues surrounding controversial legislation like lockdowns, police reforms, and gun control.</p>
 						</div>
 					</div>
 					<div class="local-content-card">
